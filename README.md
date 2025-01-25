@@ -14,7 +14,6 @@ Se trata de uma aplicação com interface gráfica para gestão de itens de bibl
 Para compilar
 ```
 javac --module-path lib -d bin src/module-info.java src/br/ufrn/imd/biblioteca/**/*.java
-
 ```
 Para os testes
 ```

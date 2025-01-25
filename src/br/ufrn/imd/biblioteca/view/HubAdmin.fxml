@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancHubAdmin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrn.imd.biblioteca.controller.HubAdminController">
+   <children>
+      <MenuBar fx:id="mBar" prefWidth="600.0">
+         <menus>
+            <Menu fx:id="mAdicionar" mnemonicParsing="false" text="Adicionar">
+               <items>
+                  <MenuItem fx:id="miAdicionarLivro" mnemonicParsing="false" onAction="#irTelaAdicionarLivro" text="Livro" />
+                  <MenuItem fx:id="miAdicionarArtigo" mnemonicParsing="false" onAction="#irTelaAdicionarArtigo" text="Artigo" />
+               </items>
+            </Menu>
+            <Menu fx:id="mRemover" mnemonicParsing="false" text="Remover">
+               <items>
+                  <MenuItem fx:id="miRemover" mnemonicParsing="false" onAction="#irTelaDeletar" text="Item" />
+               </items>
+            </Menu>
+            <Menu fx:id="mBuscar" mnemonicParsing="false" text="Buscar">
+               <items>
+                  <MenuItem fx:id="miBuscar" mnemonicParsing="false" onAction="#irTelaBuscar" text="Item" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Label fx:id="lblBemVindo" alignment="CENTER" contentDisplay="CENTER" layoutY="120.0" prefWidth="600.0" text="Bem-vindo, Admin!">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDesc" alignment="CENTER" layoutY="190.0" prefHeight="18.0" prefWidth="600.0" text="(Escolha alguma das opções acima)" />
+      <Button fx:id="btnVoltar" layoutY="25.0" mnemonicParsing="false" onAction="#voltar" text="&lt;" />
+   </children>
+</AnchorPane>

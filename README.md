@@ -1,4 +1,4 @@
-# Projeto Final de Boas Práticas de Programaçã
+# Sistema de Gestão de Itens de Biblioteca
 
 Se trata de uma aplicação com interface gráfica para gestão de itens de biblioteca. Foram usados aplicados de maneira prática os conceitos de Clean Code, Design Patterns(Singleton) e Testes. O projeto foi contruído do zero.
 
